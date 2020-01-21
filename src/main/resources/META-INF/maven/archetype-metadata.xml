@@ -5,11 +5,11 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   name="${artifactId}">
   <modules>
-    <module id="${rootArtifactId}-interface"
-      dir="__rootArtifactId__-interface"
-      name="${rootArtifactId}-interface">
+    <module id="${rootArtifactId}-facade"
+      dir="__rootArtifactId__-facade"
+      name="${rootArtifactId}-facade">
       <fileSets>
-        <fileSet packaged="true" encoding="UTF-8">
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
           <directory>src/main/java</directory>
           <includes>
             <include>**/**</include>
