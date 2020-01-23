@@ -16,6 +16,8 @@
   <modules>
     <module>${artifactId}-facade</module>
     <module>${artifactId}-service</module>
+    <module>${artifactId}-broker</module>
+    <module>${artifactId}-schedule</module>
   </modules>
 
   <dependencies>
