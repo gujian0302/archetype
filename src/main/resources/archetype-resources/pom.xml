@@ -8,6 +8,12 @@
 
   <packaging>pom</packaging>
 
+  <parent>
+    <groupId>com.gj.platform</groupId>
+    <artifactId>gj-parent</artifactId>
+    <version>2.1.11-SNAPSHOT</version>
+  </parent>
+
   <properties>
     <java.source.version>1.8</java.source.version>
     <java.target.version>${java.source.version}</java.target.version>
