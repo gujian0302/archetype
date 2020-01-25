@@ -23,6 +23,7 @@
         <version>2.3</version>
         <configuration>
           <includeEmptyDirs>true</includeEmptyDirs>
+<!--          <addDefaultExcludes>false</addDefaultExcludes>-->
         </configuration>
       </plugin>
     </plugins>

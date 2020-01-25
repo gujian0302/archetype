@@ -1,96 +1,128 @@
 <archetype-descriptor
-  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
         http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-  xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  name="${artifactId}">
-  <modules>
-    <module id="${rootArtifactId}-facade"
-      dir="__rootArtifactId__-facade"
-      name="${rootArtifactId}-facade">
-      <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        name="${artifactId}">
+    <fileSets>
+        <fileSet>
+            <directory></directory>
+            <includes>
+                <include>.gitignore</include>
+            </includes>
         </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>test/main/resources</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
+    </fileSets>
+    <modules>
+        <module id="${rootArtifactId}-facade"
+                dir="__rootArtifactId__-facade"
+                name="${rootArtifactId}-facade">
+            <fileSets>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
 
-    <module id="${rootArtifactId}-broker"
-            dir="__rootArtifactId__-broker"
-            name="${rootArtifactId}-broker">
-      <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>test/main/resources</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
+        <module id="${rootArtifactId}-broker"
+                dir="__rootArtifactId__-broker"
+                name="${rootArtifactId}-broker">
+            <fileSets>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8" filtered="true">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet encondig="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
 
-    <module id="${rootArtifactId}-schedule"
-            dir="__rootArtifactId__-schedule"
-            name="${rootArtifactId}-schedule">
-      <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>test/main/resources</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
+        <module id="${rootArtifactId}-schedule"
+                dir="__rootArtifactId__-schedule"
+                name="${rootArtifactId}-schedule">
+            <fileSets>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8" filtered="true">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet encondig="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
 
-    <module id="${rootArtifactId}-service"
-      dir="__rootArtifactId__-service"
-      name="${rootArtifactId}-service">
-      <fileSets>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>src/main/java</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-        <fileSet filtered="true" packaged="true" encoding="UTF-8">
-          <directory>test/main/java</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-        <fileSet encoding="UTF-8">
-          <directory>src/main/resources</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-        <fileSet encondig="UTF-8">
-          <directory>test/main/resources</directory>
-          <includes>
-            <include>**/**</include>
-          </includes>
-        </fileSet>
-      </fileSets>
-    </module>
-  </modules>
+        <module id="${rootArtifactId}-service"
+                dir="__rootArtifactId__-service"
+                name="${rootArtifactId}-service">
+            <fileSets>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/main/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet filtered="true" packaged="true" encoding="UTF-8">
+                    <directory>src/test/java</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet encoding="UTF-8" filtered="true">
+                    <directory>src/main/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+                <fileSet encondig="UTF-8">
+                    <directory>src/test/resources</directory>
+                    <includes>
+                        <include>**/**</include>
+                    </includes>
+                </fileSet>
+            </fileSets>
+        </module>
+    </modules>
 </archetype-descriptor>
